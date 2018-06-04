@@ -1,0 +1,60 @@
+
+
+.img-est{
+    width: 90%;
+    margin-top: 30px;
+
+    
+}
+
+.img-port{
+    width: 100%;
+    margin-top: 15px;
+
+    
+    
+    
+}
+
+.img-est{
+    margin-top: 30px;
+}
+
+.row{
+    
+}
+
+#box-fotos{
+    background-color: white;
+    padding-bottom: 6%;
+    text-align: center;
+
+    
+}
+
+#titulo{
+    padding-top: 2%;
+    background-color: white;
+    margin-bottom: -13px;
+    height: 195px;
+
+}
+
+#titulo hr{
+    
+    background-color: black;
+    height: 0.2px;
+
+
+
+}
+
+#titulo h1{
+    text-shadow: 2px 2px 8px #0533fb;
+    padding-top: 3%;
+}
+
+#box-content{
+    margin-bottom: 8%;
+    padding-bottom: -10%;
+}

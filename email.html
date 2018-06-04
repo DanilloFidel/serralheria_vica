@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Serralheria Vica</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="_css/style.css" />
+    <link rel="stylesheet" type="text/css" href="_css/portifolio.css" />
+    <link rel="stylesheet" href="_css/bootstrap.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <style>
+        #cx-form {
+            background-color: darkgrey;
+            z-index: 99;
+            position: relative;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+
+        #btn-enviar-form {
+            margin-bottom: 5%;
+        }
+
+        #btn-limpa-form {
+            margin-bottom: 5%;
+        }
+
+        h1 {
+            margin-top: 3%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        label {
+            color: black;
+            font-weight: 700;
+        }
+
+        #loading {
+            position: relative;
+            float: right;
+            z-index: 99;
+            margin-top: -500px;
+            display: none;
+        }
+
+        #loading img {
+            width: 250px;
+            height: 250px;
+            position: relative;
+        }
+    </style>
+
+    <!--Jquery-->
+    <script src="_javascript/jquery-3.3.1.min.js"></script>
+    <script src="_javascript/script-site.js"></script>
+
+    <!--Responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+</head>
+
+
+<body style="background-image: url(_imagens/back_testes.jpg)">
+
+    <!-- CABEÇALHO -->
+
+    <nav id="header-vica" class="navbar navbar-expand-lg navbar-dark">
+        <img id="logo-vica" class="img-fluid" src="_imagens/logo.png">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul id="menu-1" class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfólio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="a_empresa.html">Empresa</a>
+                </li>
+            </ul>
+            <!--
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form> formulario search inline -->
+
+        </div>
+    </nav>
+
+
+
+
+
+    <!--formulario-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3">
+
+            </div>
+
+            <div id="cx-form" class="col-12 col-lg-6">
+                <form method="post" action="destino.php">
+                    <h1 align="center">Fale conosco</h1>
+                    <div class="form-group">
+                        <label style="margin-top: 2%" for="nome">Nome Completo&nbsp;&nbsp;<small>(campo obrigatório)</small></label>
+                        <input class="form-control" type="text" id="nome" placeholder="Nome" size="30" maxlength="30" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email&nbsp;&nbsp;<small>(campo obrigatório)</small></label>
+                        <input class="form-control" type="text" id="email" placeholder="Email" size="30" maxlength="45" />
+                    </div>
+                    <div id="resposta"></div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input class="form-control" type="tel" id="telefone" placeholder="34999999999" size="30" maxlength="15" />
+                    </div>
+                    <div class="form-group">
+                        <label for="comentario">Mensagem</label><br>
+                        <textarea class="form-crontrol" id="comentario" rows="4" cols="40" maxlength="250"></textarea>
+                    </div>
+                    <input id="btn-enviar-form" class="btn bnt-success" type="submit" value="Enviar">
+                    <input id="btn-limpa-form" class="btn bnt-danger" type="reset" value="Limpar">
+                    
+                </form>
+                <div id="display"></div>
+            </div>
+
+
+            <div class="col-lg-3">
+
+            </div>
+            <div align="center" id="loading" class="container">
+                <p><img src="_imagens/loading_12.gif"/><br><strong>Enviando... </strong></p>
+            </div>
+
+        </div>
+    </div>
+    
+    <!--<script>
+        $(document).ready(function(){
+            $("#btn-enviar-form").click(function(){
+                var email = $("#email").val();
+                var nome = $("nome").val();
+                var telefone = $("#telefone").val();
+                var comentario = $("#comentario").val();
+                var dataString = 'email1=' + email + 'nome1=' + nome + 'tel1=' + telefone + 'coment1=' + comentario;
+                    if (email == "" || nome == ""){
+                        $("#display").html("<div class='alert alert-danger' role='alert'>Campos <strong>nome</strong> e <strong>email</strong> devem ser preenchidos!</div>");
+                    }else{
+                        $("#loading").show();
+                        $("#cx-form").fadeTo(500, 0.33);
+                        $.ajax({
+                            type: "POST",
+                            url: "processor.php",
+                            data: dataString,
+                            cache: false,
+                            success: function(result){
+                                $("#display").html(result);
+                            }
+                                
+                            
+                            
+                        });
+                    }
+                return false;
+            });
+        });
+        
+    </script>    -->    
+
+
+
+
+    <!--Fim do código-->
+
+    <script src="_javascript/bootstrap.min.js"></script>
+    <script src="_javascript/jquery.js"></script>
+    <script src="_javascript/popper.min.js"></script>
+</body>
+
+</html>
