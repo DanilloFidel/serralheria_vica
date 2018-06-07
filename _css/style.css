@@ -6,7 +6,10 @@
 
 #header-vica {
     /*background: url("../_imagens/img_cabecalho.jpg");*/
-    opacity: 0.6;
+    /*background-color: #3363fe;*/
+/*background-image: url(../_imagens/img_cabecalho.jpg);*/
+    background-image: url(../_imagens/texture_blue.jpg);
+    /*opacity: 0.;*/
 }
 
 #logo-vica {
@@ -16,6 +19,7 @@
     padding-left: 5px;
     margin-left: 50px;
 }
+
 
 #redes-sociais {
     height: 110px;
@@ -43,6 +47,14 @@
     font-size: 140%;
     padding-left: 40px;
 }
+#navbarTogglerDemo02 ul#menu-1 li a{
+    color: white;
+}
+
+#navbarTogglerDemo02 ul#menu-1 li a:hover{
+       text-shadow: 2px 2px 5px white; 
+}
+
 
 #navbarTogglerDemo02 ul#menu-1 {
     padding-left: 80px;

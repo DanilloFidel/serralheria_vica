@@ -201,7 +201,7 @@
         </div>
     </div>
 
-<!--clientes
+    <!--clientes
     <a name="clientes"></a>
     <div id="box-clientes" class="containe-fluid">
         <div class="row">
@@ -248,16 +248,16 @@
                     function init_map() {
                         var myOptions = {
                             zoom: 15,
-                            center: new google.maps.LatLng(-18.965986, -48.33241559999999),
+                            center: new google.maps.LatLng(-18.967642, -48.332026499999984),
                             mapTypeId: google.maps.MapTypeId.ROADMAP
                         };
                         map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
                         marker = new google.maps.Marker({
                             map: map,
-                            position: new google.maps.LatLng(-18.965986, -48.33241559999999)
+                            position: new google.maps.LatLng(-18.967642, -48.332026499999984)
                         });
                         infowindow = new google.maps.InfoWindow({
-                            content: '<strong>Vica Estruturas Metálicas</strong><br>Jardim Vica -Canaã<br>'
+                            content: '<strong>Título</strong><br>R. Ulisses Finotti - 205 Jardim Canaã<br>'
                         });
                         google.maps.event.addListener(marker, 'click', function() {
                             infowindow.open(map, marker);
@@ -272,8 +272,9 @@
                 <hr id="risco">
 
                 <div id="icons">
-                   <h5><i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;&nbsp;Vica Estruturas Metalicas</h5>
-                    <h5 id="fone"><i class="fas fa-phone fa-2x"></i>&nbsp;(34) 99999 9999/ 3222 2222</h5>
+                    <h5><i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;&nbsp;R. Ulisses Finotti - Jardim Canaã
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uberlândia - MG</p></h5>
+                    <h5 id="fone"><i class="fab fa-whatsapp fa-5x"></i>&nbsp;(34) 99181 1842</h5>
                     <h5><i class="fas fa-envelope fa-2x"></i>&nbsp;&nbsp;serralheriavica@outlook.com</h5>
                 </div>
             </div>
