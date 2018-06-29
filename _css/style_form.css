@@ -1,0 +1,53 @@
+        #cx-form {
+            background-color: darkgrey;
+            z-index: 99;
+            position: relative;
+            margin-top: 2%;
+            margin-bottom: 5%;
+        }
+
+        #btn-enviar-form {
+            margin-bottom: 5%;
+        }
+
+        #btn-limpa-form {
+            margin-bottom: 5%;
+        }
+
+        h1 {
+            margin-top: 3%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        label {
+            color: black;
+            font-weight: 700;
+        }
+
+        #loading {
+            position: relative;
+            float: right;
+            z-index: 99;
+            margin-top: -500px;
+            display: none;
+        }
+
+        #loading img {
+            width: 250px;
+            height: 250px;
+            position: relative;
+        }
+        
+        p {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            background: gray;
+            color: #FFF;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+}

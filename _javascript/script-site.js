@@ -17,7 +17,6 @@
             $("#redes-sociais").show();
             $("#lista-redes").show();
             $("#titulo").css("marginTop", "10%");
-
         } else {
             $("#icons i").css("padding", "3px");
             $("#icons i").css("font-size", "90%");

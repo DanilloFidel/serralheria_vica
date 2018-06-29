@@ -1,8 +1,12 @@
-<?php
-    //$msg =0;
-    //@$msg = $_REQUEST["msg"];
+<?php require_once("destino.php"); ?>
+<?php if(isset($_POST["enviar"])){
+    if (enviarMensagem($_POST)){
+        $mensagem = "Mensagem enviada com sucesso!";
+    }else{
+        $mensagem = "Falha ao enviar!";
+    }  
+}
 ?>
-
 <!doctype html>
 <html>
 
@@ -15,52 +19,8 @@
     <link rel="stylesheet" type="text/css" href="_css/style.css" />
     <link rel="stylesheet" type="text/css" href="_css/portifolio.css" />
     <link rel="stylesheet" href="_css/bootstrap.css" />
+    <link rel="stylesheet" href="_css/style_form.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
-    <style>
-        #cx-form {
-            background-color: darkgrey;
-            z-index: 99;
-            position: relative;
-            margin-top: 2%;
-            margin-bottom: 5%;
-        }
-
-        #btn-enviar-form {
-            margin-bottom: 5%;
-        }
-
-        #btn-limpa-form {
-            margin-bottom: 5%;
-        }
-
-        h1 {
-            margin-top: 3%;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        label {
-            color: black;
-            font-weight: 700;
-        }
-
-        #loading {
-            position: relative;
-            float: right;
-            z-index: 99;
-            margin-top: -500px;
-            display: none;
-        }
-
-        #loading img {
-            width: 250px;
-            height: 250px;
-            position: relative;
-        }
-    </style>
 
     <!--Jquery-->
     <script src="_javascript/jquery-3.3.1.min.js"></script>
@@ -69,17 +29,11 @@
     <!--Responsivo-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
 </head>
 
 <body style="background-image: url(_imagens/back_testes.jpg)">
    
-    <!--<?php if ($msg == enviado): ?>
-    <h1>Mensagem enviada!</h1>
-    <?php else: ?>-->
-    
-    
+  
     <!-- CABEÇALHO -->
 
     <nav id="header-vica" class="navbar navbar-expand-lg navbar-dark">
@@ -100,11 +54,7 @@
                     <a class="nav-link" href="a_empresa.html">Empresa</a>
                 </li>
             </ul>
-            <!--
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> formulario search inline -->
+
 
         </div>
     </nav>
@@ -118,7 +68,7 @@
             </div>
 
             <div id="cx-form" class="col-12 col-lg-6">
-                <form method="post" action="destino.php">
+                <form method="post" action="form.php">
                     <h1 align="center">Fale conosco</h1>
                     <div class="form-group">
                         <label style="margin-top: 2%" for="nome">Nome Completo&nbsp;&nbsp;<small>(campo obrigatório)</small></label>
@@ -137,9 +87,12 @@
                         <label for="comentario">Mensagem</label><br>
                         <textarea class="form-crontrol" id="comentario" name="mensagem" rows="4" cols="40" maxlength="250"></textarea>
                     </div>
-                    <input id="btn-enviar-form" class="btn bnt-success" type="submit" value="Enviar">
-                    <input id="btn-limpa-form" class="btn bnt-danger" type="reset" value="Limpar">
-
+                    <input id="btn-enviar-form" class="btn bnt-success" type="submit" value="Enviar" name="enviar">
+                    <?php
+                        if( isset($mensagem) ) {
+                            echo "<p>" . $mensagem . "</p>";
+                        }
+                    ?>
                 </form>
                 <div id="display"></div>                         
             </div>
@@ -153,7 +106,7 @@
     <script src="_javascript/bootstrap.min.js"></script>
     <script src="_javascript/jquery.js"></script>
     <script src="_javascript/popper.min.js"></script>
-    <?php//endif; ?>
+
 </body>
 
 </html>
