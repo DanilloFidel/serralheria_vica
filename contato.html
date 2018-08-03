@@ -10,16 +10,15 @@
     <link rel="stylesheet" type="text/css" href="_css/style.css" />
     <link rel="stylesheet" type="text/css" href="_css/portifolio.css" />
     <link rel="stylesheet" href="_css/bootstrap.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+
     <style>
-        
-        #footer a{
+        #footer a {
             text-decoration-color: black;
             color: black;
 
         }
-        
     </style>
 
 
@@ -41,9 +40,10 @@
 
     <nav id="header-vica" class="navbar navbar-expand-lg navbar-dark">
         <img id="logo-vica" class="img-fluid" src="_imagens/logo.png">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul id="menu-1" class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -53,16 +53,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="portfolio.html">Portfólio</a>
                 </li>
-                                <li class="nav-item">
+                <li class="nav-item">
                     <a class="nav-link" href="a_empresa.html">Empresa</a>
                 </li>
             </ul>
-            <!--
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form> formulario search inline -->
-
         </div>
     </nav>
 
@@ -78,9 +72,18 @@
                 <h1 style="padding-top: 3%">Redes Sociais</h1>
                 <hr style="margin-bottom:2%; margin-top: 1.3%" id="risco">
                 <div style="margin-bottom: 10%;" id="icons">
-                    <a href="#"><h5><i class="fab fa-facebook fa-5x"></i>&nbsp;facebook.com/estruturasvica</h5></a>
-                    <a href="#"><h5 id="fone"><i class="fab fa-instagram fa-5x"></i>&nbsp;@estruturasvica</h5></a>
-                    <a href="form.php" id="email-sent"><h5 style="margin-bottom: 20%;"><i class="fas fa-paper-plane fa-5x"></i>&nbsp;&nbsp;Envie um email</h5></a>
+                    <a target="_blank" href="https://www.facebook.com/estruturas.vica.3">
+                        <h5>
+                            <i class="fab fa-facebook fa-5x"></i>&nbsp;facebook.com/estruturasvica</h5>
+                    </a>
+                    <a href="#">
+                        <h5 id="fone">
+                            <i class="fab fa-instagram fa-5x"></i>&nbsp;@estruturas_vica</h5>
+                    </a>
+                    <a href="form.php" id="email-sent">
+                        <h5 style="margin-bottom: 20%;">
+                            <i class="fas fa-paper-plane fa-5x"></i>&nbsp;&nbsp;Envie um email</h5>
+                    </a>
                 </div>
 
             </div>
@@ -88,54 +91,33 @@
             <div id="foot" class="col-12 col-sm-12 col-lg-5">
                 <h1 style="margin-top: 2%">Como chegar</h1>
                 <hr style="margin-bottom:2%; margin-top: 1.3%" id="risco">
-                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
-                <div id="mapa" style='overflow:hidden;height:300px;width:90%;margin-right: 1%; margin-left: 2%; margin-top: 5%;'>
-                    <div id='gmap_canvas' style='height:300px;width:90%;'></div>
-                    <style>
-                        #gmap_canvas img {
-                            max-width: none !important;
-                            background: none !important
-                        }
-                    </style>
-                </div>
-                <script type='text/javascript'>
-                    function init_map() {
-                        var myOptions = {
-                            zoom: 15,
-                            center: new google.maps.LatLng(-18.967642, -48.332026499999984),
-                            mapTypeId: google.maps.MapTypeId.ROADMAP
-                        };
-                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-                        marker = new google.maps.Marker({
-                            map: map,
-                            position: new google.maps.LatLng(-18.967642, -48.332026499999984)
-                        });
-                        infowindow = new google.maps.InfoWindow({
-                            content: '<strong>Título</strong><br>R. Ulisses Finotti - 205 Jardim Canaã<br>'
-                        });
-                        google.maps.event.addListener(marker, 'click', function() {
-                            infowindow.open(map, marker);
-                        });
-                        infowindow.open(map, marker);
-                    }
-                    google.maps.event.addDomListener(window, 'load', init_map);
-                </script>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.1782580827335!2d-48.332718513733596!3d-18.96773330362525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a4434ef3a29d47%3A0x6cd8d39d5588eb83!2sR.+Ulisses+Finotti+-+Jardim+Cana%C3%A3%2C+Uberl%C3%A2ndia+-+MG!5e0!3m2!1spt-BR!2sbr!4v1532459990342"
+                    width="90%" height="300px" frameborder="0" style="border:0"></iframe>
             </div>
             <div id="foot" class="col-12 col-sm-12 col-lg-4">
                 <h1 style="padding-top: 2%">Fale Conosco</h1>
                 <hr id="risco">
 
                 <div id="icons">
-                    <h5><i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;&nbsp;R. Ulisses Finotti - Jardim Canaã
+                    <h5>
+                        <i class="fas fa-map-marker-alt fa-2x"></i>&nbsp;&nbsp;&nbsp;R. Ulisses Finotti - Jardim Canaã
                         <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uberlândia - MG</p>
                     </h5>
-                    <h5 id="fone"><i class="fab fa-whatsapp fa-5x"></i>&nbsp;(34) 99181 1842</h5>
-                    <h5><i class="fas fa-envelope fa-2x"></i>&nbsp;&nbsp;serralheriavica@outlook.com</h5>
+                    <h5 id="fone">
+                        <a href="https://api.whatsapp.com/send?phone=5534991811842&text=sua%20mensagem">
+                            <i class="fab fa-whatsapp fa-5x"></i>&nbsp;(34) 99181 1842</h5>
+                    </a>
+                    <h5>
+                        <a href="form.php">
+                            <i class="fas fa-envelope fa-2x"></i>&nbsp;&nbsp;contato@estruturasvica.com.br</h5>
+                    </a>
                 </div>
             </div>
         </div>
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=5534997958717&text=sua%20mensagem">
+            <small style="margin-left: 5px; color: black; margin-bottom: -10%">powered by DanilloFidel</small>
+        </a>
     </div>
-
     <!--Fim do código-->
 
     <script src="_javascript/bootstrap.min.js"></script>

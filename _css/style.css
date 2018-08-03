@@ -5,61 +5,58 @@
 /*////////////////////////////////////////*/
 
 #header-vica {
-    /*background: url("../_imagens/img_cabecalho.jpg");*/
-    /*background-color: #3363fe;*/
-/*background-image: url(../_imagens/img_cabecalho.jpg);*/
-    background-image: url(../_imagens/texture_blue.jpg);
-    /*opacity: 0.;*/
+  /*background: url("../_imagens/img_cabecalho.jpg");*/
+  /*background-color: #3363fe;*/
+  /*background-image: url(../_imagens/img_cabecalho.jpg);*/
+  background-image: url(../_imagens/texture_blue.jpg);
+  /*opacity: 0.;*/
 }
 
 #logo-vica {
-    height: 100px;
-    width: 150px;
-    margin: 10px;
-    padding-left: 5px;
-    margin-left: 50px;
+  height: 100px;
+  width: 150px;
+  margin: 10px;
+  padding-left: 5px;
+  margin-left: 50px;
 }
 
-
 #redes-sociais {
-    height: 110px;
-    width: 45px;
-    margin-left: 80px;
-    margin: 0;
-    margin-bottom: 8px;
-    padding-right: 10px;
-
+  height: 110px;
+  width: 45px;
+  margin-left: 80px;
+  margin: 0;
+  margin-bottom: 8px;
+  padding-right: 10px;
 }
 
 #link-redes {
-    color: white;
-    padding-top: 10px;
-    padding-left: 0;
+  color: white;
+  padding-top: 10px;
+  padding-left: 0;
 }
 
 #lista-redes {
-    list-style-type: none;
-    margin-left: 2px;
-    padding: 0;
+  list-style-type: none;
+  margin-left: 2px;
+  padding: 0;
 }
 
 #navbarTogglerDemo02 ul#menu-1 li {
-    font-size: 140%;
-    padding-left: 40px;
+  font-size: 140%;
+  padding-left: 40px;
 }
-#navbarTogglerDemo02 ul#menu-1 li a{
-    color: white;
-}
-
-#navbarTogglerDemo02 ul#menu-1 li a:hover{
-       text-shadow: 2px 2px 5px white; 
+#navbarTogglerDemo02 ul#menu-1 li a {
+  color: white;
 }
 
+#navbarTogglerDemo02 ul#menu-1 li a:hover {
+  text-shadow: 2px 2px 5px white;
+}
 
 #navbarTogglerDemo02 ul#menu-1 {
-    padding-left: 80px;
-    padding-top: 65px;
-    margin-left: 10px;
+  padding-left: 80px;
+  padding-top: 65px;
+  margin-left: 10px;
 }
 
 /*////////////////////////////////////////*/
@@ -69,13 +66,12 @@
 /*////////////////////////////////////////*/
 
 #img-topo {
-    width: 100%;
-
+  width: 100%;
 }
 
 #div-img {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*////////////////////////////////////////*/
@@ -85,70 +81,61 @@
 /*////////////////////////////////////////*/
 
 body {
-    background-image: url(../_imagens/back_structure.jpg);
-    margin: 0;
-    padding: 0;
-
+  background-image: url(../_imagens/back_structure.jpg);
+  margin: 0;
+  padding: 0;
 }
-
 
 #box {
-    padding: 0;
+  padding: 0;
 }
 
-#box-item{
-    position: relative;
-    z-index: 0;
+#box-item {
+  position: relative;
+  z-index: 0;
 }
 
 .teste {
-    /* cada quadrado cinza*/
-    background-color: #9d9d9d;
-    /*background-color: #454549;   cinza claro */
-    margin-top: 30%;
-    padding-right: 5%;
-    margin-right: 10%;
-    margin-left: 10%;
-    z-index: 0;
-    position: relative;
-    padding-bottom: 5%;
-    height: 200px;
-    box-shadow: 8px 10px 10px #3c3c3c; 
-
+  /* cada quadrado cinza*/
+  background-color: #9d9d9d;
+  /*background-color: #454549;   cinza claro */
+  margin-top: 30%;
+  padding-right: 5%;
+  margin-right: 10%;
+  margin-left: 10%;
+  z-index: 0;
+  position: relative;
+  padding-bottom: 5%;
+  height: 200px;
+  box-shadow: 8px 10px 10px #3c3c3c;
 }
-
-
 
 #box-item img {
-    width: 100px;
-    height: 85px;
-    /*padding-left: 42%;*/
-    z-index: 10;
-    position: relative;
-    margin-top: -30px;
-    padding-left: 6%;
-
+  width: 100px;
+  height: 85px;
+  /*padding-left: 42%;*/
+  z-index: 10;
+  position: relative;
+  margin-top: -30px;
+  padding-left: 6%;
 }
-
 
 .teste h1,
 h2 {
-    font-size: 120%;
-    padding-left: 8%;
-    position: relative;
-    margin: 3%;
-
+  font-size: 120%;
+  padding-left: 8%;
+  position: relative;
+  margin: 3%;
 }
 
 .teste #box-item-link {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-
 .teste p {
-    padding-top: 4%;
-    margin-bottom: 0;
+  padding-top: 4%;
+  margin-bottom: 0;
 }
 
 /*////////////////////////////////////////*/
@@ -158,49 +145,47 @@ h2 {
 /*////////////////////////////////////////*/
 
 #segundo-conteudo {
-    padding-top: 10%;
-    margin-top: 10%;
-    background-color: white;
-    height: auto;
+  padding-top: 10%;
+  margin-top: 10%;
+  background-color: white;
+  height: auto;
 }
 
 #segundo-conteudo h1 {
-    padding-top: 5%;
-    text-align: center;
-
+  padding-top: 5%;
+  text-align: center;
 }
 
 video {
-    margin-top: 15%;
-    margin-left: 10%;
-    padding-bottom: 15%;
-
+  margin-top: 15%;
+  margin-left: 10%;
+  padding-bottom: 15%;
 }
 
 video::-webkit-media-controls-mute-button {
-    display: none;
+  display: none;
 }
 
 video::-webkit-media-controls-volume-slider {
-    display: none;
+  display: none;
 }
 
 hr.style-four {
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
 }
 
 hr.style-four:after {
-    content: "Serralheria Vica";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
+  content: "Serralheria Vica";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
 }
 
 /*////////////////////////////////////////*/
@@ -210,36 +195,31 @@ hr.style-four:after {
 /*////////////////////////////////////////*/
 
 #terceiro-conteudo {
-    background-color: white;
-    margin-top: 20%;
-    height: auto;
-    text-align: center;
-    padding-bottom: 10%;
-    padding-top: 10%;
-    background-image: url(../_imagens/back_testes.jpg);
-
-
+  background-color: white;
+  margin-top: 20%;
+  height: auto;
+  text-align: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
+  background-image: url(../_imagens/back_testes.jpg);
 }
 
-
 #terceiro-conteudo img {
-    position: relative;
-    padding: 8% 8%;
-
-
+  position: relative;
+  padding: 8% 8%;
 }
 
 #terceiro-conteudo {
-    font-size: 130%;
-    color: black;
+  font-size: 130%;
+  color: black;
 }
 
 #fim {
-    margin-right: 350px;
-    margin-left: 350px;
-    background-color: #ce1f26;
-    height: 3px;
-    margin-top: 90px;
+  margin-right: 350px;
+  margin-left: 350px;
+  background-color: #ce1f26;
+  height: 3px;
+  margin-top: 90px;
 }
 
 /*////////////////////////////////////////*/
@@ -249,21 +229,21 @@ hr.style-four:after {
 /*////////////////////////////////////////*/
 
 #box-clientes {
-    background-color: white;
-    margin-bottom: 10%;
-    position: relative;
+  background-color: white;
+  margin-bottom: 10%;
+  position: relative;
 }
 
 #box-clientes h1 {
-    padding-top: 2%;
-    padding-left: 5%;
+  padding-top: 2%;
+  padding-left: 5%;
 }
 
 #box-clientes img {
-    width: 200px;
-    height: 180px;
-    position: relative;
-    margin-top: 10%;
+  width: 200px;
+  height: 180px;
+  position: relative;
+  margin-top: 10%;
 }
 
 /*////////////////////////////////////////*/
@@ -273,73 +253,72 @@ hr.style-four:after {
 /*////////////////////////////////////////*/
 
 #footer {
-    background-image: url(../_imagens/footer_texture.jpg);
-    background-repeat: repeat;
-    height: auto;
-
+  background-image: url(../_imagens/footer_texture.jpg);
+  background-repeat: repeat;
+  height: auto;
 }
 
 #gmap_canvas {
-    margin-top: -3%;
+  margin-top: -3%;
 }
 
 #logo-footer {
-    width: 80%;
-    padding-left: 10px;
-    padding-top: 10px;
-
+  width: 80%;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 #footer p {
-    margin-left: 20px;
-    padding-top: 8px;
-    margin-top: 5%;
-    position: relative;
-    font-weight: 700;
+  margin-left: 20px;
+  padding-top: 8px;
+  margin-top: 5%;
+  position: relative;
+  font-weight: 700;
 }
 
-
-
-#icons{
-    width: 50px; 
-    height: 175px;
-    padding-top: 0;
-    margin-right: 0;
-    position: relative;
-    margin-right: 0;
+#icons {
+  width: 50px;
+  height: 250px;
+  padding-top: 0;
+  margin-right: 0;
+  position: relative;
+  margin-right: 0;
 }
 
-#icons i{
-    padding: 5px;
-    font-size: 120%; 
+#icons i {
+  padding: 5px;
+  font-size: 120%;
 }
 
 #footer h6 {
-    margin-bottom: 8%;
+  margin-bottom: 8%;
 }
 
 #footer h5 {
-    margin-top: 15px;
-    padding-top: 15px;
-    white-space: nowrap;
+  margin-top: 15px;
+  padding-top: 15px;
+  white-space: nowrap;
 }
 
 #risco {
-    background-color: #ce1f26;
-    margin-right: 40%;
-
-
+  background-color: #ce1f26;
+  margin-right: 40%;
 }
 
 #foot {
-    padding-right: 0;
+  padding-right: 0;
+}
+
+#foot a {
+  text-decoration: none;
+  color: black;
 }
 
 /* formulario */
 
 #formulario {
-    background-color: aquamarine;
-    z-index: 99;
-    position: relative;
-    margin-top: -35%;
+  background-color: aquamarine;
+  z-index: 99;
+  position: relative;
+  margin-top: -35%;
 }

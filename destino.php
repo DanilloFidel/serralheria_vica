@@ -4,14 +4,15 @@
         $nome_usuario = $dados["nome"];
         $email_usuario = $dados["email"];
         $mensagem_usuario = $dados["mensagem"];
+        $telefone = $dados["telefone"];
         
         //criar variaveis de envio
-        $destino = "danillopkt@gmail.com";
-        $remetente = "aquientraemail@dodominio.com.br";
-        $assunto = "mensagem do site";
+        $destino = "serralheriavica@outlook.com";
+        $remetente = $email_usuario;
+        $assunto = "Ola Daniel, um novo cliente entrou em contato, Dados para contato : ". $nome_usuario . "/" . $telefone;
         
         //corpo do email
-        $mensagem = "Ola, você recebeu um email de " . $nome_usuario . "<br>" . $mensagem_usuario;
+        $mensagem = $mensagem_usuario;
         
         return mail($destino,$assunto,$mensagem,$remetente);
     };
