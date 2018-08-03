@@ -179,7 +179,7 @@ hr.style-four {
 }
 
 hr.style-four:after {
-  content: "Serralheria Vica";
+  content: "Estruturas Vica";
   display: inline-block;
   position: relative;
   top: -0.7em;

@@ -12,7 +12,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Serralheria Vica</title>
+    <title>Estruturas Vica | Portifólio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--CSS-->
@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="_css/bootstrap.css" />
     <link rel="stylesheet" href="_css/style_form.css" type="text/css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <meta name="theme-color" content="#104088">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#104088">
+    <meta name="msapplication-navbutton-color" content="#104088">
     <!--Jquery-->
     <script src="_javascript/jquery-3.3.1.min.js"></script>
     <script src="_javascript/script-site.js"></script>
